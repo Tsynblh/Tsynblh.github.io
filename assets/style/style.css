@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lora", serif;
+  background-color: #f7e6c2;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #114232;
+  color: #f7e6c2;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
+.menu-toggle {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  margin-right: 70px;
+}
+
+nav ul li a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 500;
+  list-style: none;
+  color: #f7e6c2;
+}
+
+li a:hover {
+  background-color: #ff8787;
+  padding: 4px;
+  border-radius: 15px;
+  color: #114232;
+  font-weight: 600;
+}
+
+/* Main */
+
+/* Home */
+.home {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  color: #114232;
+  font-size: 2rem;
+}
+
+.text h2 {
+  font-weight: 700;
+}
+
+.text h5 {
+  font-weight: 500;
+}
+
+.home img {
+  width: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+  left: 25%;
+}
+
+/* Best Seller */
+.best-seller {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3% 10%;
+  color: #ff8787;
+  position: relative;
+  border-radius: 50px;
+  background-color: #114232;
+  margin: 70px;
+}
+
+.best-seller h2 {
+  font-size: 70px;
+  font-style: italic;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.best {
+  left: 120px;
+}
+
+.seller {
+  right: 100px;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider img {
+  width: 400px;
+  height: auto;
+  border-radius: 25px;
+  background-color: #ff8787;
+  padding: 10px;
+}
+
+/* Services */
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.services h2 {
+  background-color: white;
+  padding-top: 20px;
+  top: 10px;
+  width: 27%;
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-size: 2.5rem;
+  color: #114232;
+  font-weight: 700;
+}
+
+.services section {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.services div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+}
+
+.services h3 {
+  padding-top: 20px;
+  font-size: 1.5rem;
+  color: #114232;
+}
+.services p {
+  padding-top: 7px;
+  width: 300px;
+  text-align: justify;
+}
+
+.services img {
+  width: 300px;
+  height: 400px;
+}
+
+/* About */
+.about {
+  display: flex;
+  margin-top: 30px;
+  padding: 89px;
+  gap: 50px;
+  align-items: center;
+}
+
+.about h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #f7e6c2;
+  font-weight: 700;
+  font-style: italic;
+  background-color: #114232;
+  padding: 5px;
+}
+
+.about p::first-letter {
+  font-size: 3rem;
+  color: #ff8787;
+  font-weight: 700;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #114232;
+  text-align: justify;
+  padding-top: 20px;
+}
+
+.about img {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 8px solid #114232;
+}
+
+/* Aside */
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.aside-value {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 17px;
+  padding: 15px;
+  background-color: white;
+  color: #114232;
+}
+
+.table-value {
+  font-size: 15px;
+  padding: 3px;
+  color: #114232;
+}
+
+.table-value th {
+  text-align: left;
+}
+
+.table-value td {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.aside h2 {
+  font-size: 2.5rem;
+  color: #114232;
+  font-weight: 700;
+  padding: 5px;
+}
+
+.aside img {
+  width: 250px;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #114232;
+  padding: 20px;
+  color: #f7e6c2;
+  font-size: large;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  /* Header */
+  .header {
+    padding: 20px 5%;
+  }
+  nav ul {
+    gap: 20px;
+  }
+
+  /* Home */
+  .home img {
+    width: 100%;
+    left: 0;
+  }
+
+  /* Best Seller */
+  .best-seller h2 {
+    font-size: 40px;
+  }
+  .slider img {
+    width: 250px;
+  }
+  .best {
+    left: 50px;
+  }
+  .seller {
+    right: 50px;
+  }
+
+  /* Services */
+  .services h2 {
+    width: 46.8%;
+  }
+  .services section {
+    flex-direction: column;
+  }
+  
+  /* About */
+  .about {
+    flex-direction: column;
+    padding: 50px;
+  }
+  .about img {
+    width: 50%;
+  }
+
+  /* Aside */
+  .aside img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 425px){
+  /* Header */
+  .header {
+    padding: 20px 5%;
+    font-size: smaller;
+  }
+  nav ul {
+    display: none;
+    position: absolute;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #114232;
+    z-index: 1;
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul.active {
+    display: flex;
+  }
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  .menu-toggle {
+    display: block;
+    font-size: large;
+    order: -1;
+    cursor: pointer;
+    color: #114232;
+    position: absolute;
+    right: 20px;
+  }
+  .menu-toggle:hover {
+    color: #ff8787;
+  }
+
+  .menu-toggle:focus {
+    outline: none;
+  }
+
+  /* Home */
+  .home section {
+    font-size: 25px;
+  }
+  .text h5 {
+    font-size: 1.2rem;
+  }
+  .home img {
+    width: 100%;
+    left: 0;
+  }
+
+  /* Best Seller */
+  .best-seller {
+    padding: 4%;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .best-seller h2 {
+    font-size: 25px;
+    color: #f7e6c2;
+  }
+  .best {
+    left: 20px;
+  }
+  .seller {
+    right: 10px;
+  }
+  .slider img {
+    width: 190px;
+  }
+
+  /* Services */
+  .services h2 {
+    width: 46.8%;
+  }
+  .services section {
+    flex-direction: column;
+  }
+
+  /* About */
+  .about {
+    flex-direction: column;
+    padding: 50px;
+  }
+  .about img {
+    width: 100%;
+  }
+
+  /* Aside */
+  .aside img {
+    width: 200px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: small;
+  }
+}
